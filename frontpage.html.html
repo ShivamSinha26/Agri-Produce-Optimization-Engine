@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Soil Production</title>
+    <style media="screen">
+      body{
+        background-image: url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX28733406.jpg');
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .card{
+        background-color: #ffffe6;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="card" style="width: 50%; height: 80%; margin-top: 50px; margin-right: 700px; margin-bottom: 50px;">
+          <div class="card-header" style="text-align: center">
+            <h1>Welcome to Agri-produce optimization Engine</h1>
+          </div>
+          <div class="card-body">
+            <div class="col-md-12 form-group" style="text-align: center">
+              <h4>Want to predict the crop production ? Try filling the details....</h4>
+              <br>
+            </div>
+              <form action=" http://127.0.0.1:5000/predictions" method="post" accept-charset="utf-8">
+                <div class="row">
+                  <div class="col-md-6 form-group" style="text-align: center">
+                    <label><b>Enter Nitrogen:</b></label>
+                    <input type="text" class ="form-control" name="N" id="N" value="" placeholder="Enter Nitrogen here">
+                    <br>
+                  </div>
+                  <div class="col-md-6 form-group" style="text-align: center">
+                    <label><b>Enter Phosphorus:</b></label>
+                    <input type="text" class ="form-control" name="P" id="P" value="" placeholder="Enter Phosphorus here">
+                    <br>
+                  </div>
+                  <div class="col-md-6 form-group" style="text-align: center">
+                    <label><b>Enter potassium:</b></label>
+                    <input type="text" class="form-control" name="K" id="K" value="" placeholder="Enter potassium here">
+                     <br>
+                  </div>
+                  <div class="col-md-6 form-group" style="text-align: center">
+                    <label><b>Enter Temperature:</b></label>
+                    <input type="text" class="form-control" name="temp" id="temp" value="" placeholder="Enter Temperature here">
+                     <br>
+                  </div>
+                  <div class="col-md-6 form-group" style="text-align: center">
+                    <label><b>Enter Humidity:</b></label>
+                    <input type="text" class="form-control" name="humidity" id="humidity" value="" placeholder="Enter Humidity here">
+                     <br>
+                  </div>
+                  <div class="col-md-6 form-group" style="text-align: center">
+                    <label><b>Enter ph:</b></label>
+                    <input type="text" class="form-control" name="ph" id="ph" value="" placeholder="Enter ph here">
+                     <br>
+                  </div>
+                  <div class="col-md-6 form-group" style="text-align: center">
+                    <label><b>Enter rainfall:</b></label>
+                    <input type="text" class="form-control" name="rain" id="rain" value="" placeholder="Enter rainfall here">
+                     <br>
+                  </div>
+
+                  
+                  <div class="col-md-12 form-group">
+                    <button type = "submit" class="btn btn-primary form-control">Submit</button>
+                    <br>
+                     <div class="col-md-12 form-group" style = "text-align:center">
+                     <h3>{{Predict}}</h3>
+                    
+                </div>
+                  </div>
+                  
+                   <br>
+                </div>
+              </form>
+              <br>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  </body>
+</html>
